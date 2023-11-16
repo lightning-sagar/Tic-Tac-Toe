@@ -15,7 +15,11 @@ let started = false;
 
 start();
 
-begin.addEventListener("click", level1);
+begin.addEventListener("click", () => {
+    begin.style.display = "none";
+    level1();
+});
+
 reset.addEventListener("click", () => {
     s1.innerText = '0';
     s2.innerText = '0';
@@ -54,6 +58,7 @@ function resetGame() {
         cell.textContent = "";
     });
     started = false;
+    begin.style.display = 'block'; n
 }
 
 function cellClick() {

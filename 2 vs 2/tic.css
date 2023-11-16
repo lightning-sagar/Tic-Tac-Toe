@@ -168,7 +168,6 @@ h2 {
 
 .back {
     font-size: 18px;
-    padding: 10px;
     margin: 150px;
     cursor: pointer;
     position: absolute;
@@ -211,6 +210,12 @@ h2 {
     .score {
         padding: 5px;
         font-size: 0.8rem;
+    }
+
+    .back {
+        align-items: center;
+        margin-top: 76px; 
+        right: 6px;
     }
 
     .p1,
