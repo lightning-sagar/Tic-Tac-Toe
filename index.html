@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #00051c, #000);
+            color: #fff;
+        }
+
+        #game-container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 80px;
+            text-shadow: 0 0 10px #5a4eff, 0 0 20px #5a4eff, 0 0 30px #5a4eff;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .game-button {
+            font-size: 24px;
+            padding: 15px 30px;
+            margin: 50px 0;
+            cursor: pointer;
+            background-color: #5a4eff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 20px #5a4eff;
+        }
+
+        .game-button:hover {
+            background-color: #4023f9;
+            box-shadow: 0 0 30px #5a4eff;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .game-button {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tic Tac Toe</h1>
+        <img src="https://www.shutterstock.com/shutterstock/videos/1100234911/thumb/7.jpg?ip=x480" alt="">
+        <div class="button-container">
+            <a href="player vs robot/player.html" class="game-button">Player vs Robot</a>
+            <a href="2 vs 2/tic.html" class="game-button">Player vs Player</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="tic.css">
+    <title>2 VS 2</title>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <h2>Press any key to start</h2>
+    <div class="alert-container">
+        <div class="alert"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="board-container">
+        <button class="begain">Start</button>
+        <button class="back" onclick="goBack()">Back</button>
+        <button class="begain">Start</button>
+        <div class="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <audio id="victoryAudio" src="path/to/mixkit-males-yes-victory-2012.wav" preload="auto"></audio>
+
+        <button class="reset">Reset Score</button>
+        <div class="player">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+            <div class="p1">P1(X)</div>
+            <div class="tie">Tie</div>
+            <div class="p2">P2(O)</div>
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </div>
+        <div class="score">
+            <div class="s1">0</div>
+            <div class="s2">0</div>
+            <div class="s3">0</div>
+        </div>
+    </div>
+    <script src="tic.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = '../index.html';
+        }   
+    </script>
+</body>
+
+</html>

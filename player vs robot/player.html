@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="tac.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <h1>Player VS Robot</h1>
+
+    <h2>Press any key to start</h2>
+    <div class="alert-container">
+        <div class="alert"></div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="board-container">
+        <button class="back" onclick="goBack()">Back</button>
+        <button class="begain">Start</button>
+
+        <div class="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <button class="reset">Reset Score</button>
+        <div class="player">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+            <div class="p1">Player(X)</div>
+            <div class="tie">Tie</div>
+            <div class="p2">Robot(O)</div>
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </div>
+        <div class="score">
+            <div class="s1">0</div>
+            <div class="s2">0</div>
+            <div class="s3">0</div>
+        </div>
+    </div>
+    <script src="tac.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = '../index.html';
+        }
+    </script>
+</body>
+
+</html>
