@@ -16,6 +16,7 @@ document.addEventListener("keypress", () => {
 
 function startGame() {
   started = true;
+  beginButton.style.display = "none";
   h2.innerText = `Player ${currentPlayer} Moves`;
   playGame();
 }

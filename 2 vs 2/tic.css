@@ -30,7 +30,7 @@ h2 {
     border: 1px solid #61dafb;
     border-radius: 10px;
     font-size: 1.5rem;
-    display: none; /* Initially hide the alert */
+    display: none; 
 }
 
 .board-container {
@@ -175,12 +175,20 @@ h2 {
     transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: 0 0 10px #61dafb;
 }
+.material-symbols-outlined new{
+    box-shadow: 0 0 10px #61dafb;
+
+}
+.new {
+    color: black;
+}
 .back {
+    top: 102px;
+    position: absolute;
+    left: 20px;
     color: #333;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+    padding: 10px 3px;
+    border-radius: 30px;
     cursor: pointer;
     background-color: #61dafb;
     transition: background-color 0.3s, box-shadow 0.3s;
@@ -214,7 +222,7 @@ h2 {
     .board {
         grid-template-columns: repeat(3, 100px);
         grid-template-rows: repeat(3, 100px);
-        grid-gap: 5px;
+        grid-gap: 2px;
     }
 
     .cell {
